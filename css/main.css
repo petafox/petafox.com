@@ -139,6 +139,28 @@ a:hover {
   font-weight: bold;
 }
 
+.contact-detail:nth-child(n+2):before {
+   /* &middot; */
+  content: '\00B7';
+  margin-right: 0.5em;
+}
+
+@media (max-width: 1280px) {
+  .lead {
+    font-size: 125%;
+  }
+}
+
+@media (max-width: 990px) {
+  .contact-detail {
+    display: block;
+    margin-top: 0.75em;
+  }
+
+  .contact-detail:nth-child(n+2):before {
+    content: '';
+  }
+}
 
 
 /* ==========================================================================
